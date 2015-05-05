@@ -69,6 +69,9 @@ TEMPLATES = [
     },
 ]
 
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'frontend/app/templates'), ]
+
+
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
