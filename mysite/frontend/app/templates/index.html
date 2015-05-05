@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="{% static "jquery/dist/jquery.min.js" %}" ></script>
+
+    <script src="{% static "angular/angular.min.js" %}" ></script>
+    <script src="{% static "angular-route/angular-route.min.js" %}" ></script>
+    <script src="{% static "angular-resource/angular-resource.min.js" %}" ></script>
+
+    <script src="{% static "famous/dist/famous-global.js" %}" ></script>
+    <script src="{% static "famous-angular/dist/famous-angular.js" %}" ></script>
+
+
+    <script src="{% static "app.js" %}" ></script>
+    <script src="{% static "controllers.js" %}" ></script>
+
+
+    <link rel="stylesheet" href="{% static "famous-angular/dist/famous-angular.css" %}">
+
+    <link href="{% static "screen.css" %}" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="{% static "print.css" %}" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+        <link href="{% static "ie.css" %}" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+
+    <base href="/">
+</head>
+<body>
+<h1>Index</h1>
+
+
+
+<div ng-view></div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+{% verbatim %}
+UVOD
+<fa-app id="app">
+    <fa-sequential-layout fa-options="containerSequentialOptions">
+        <fa-sequential-layout fa-options="sequentialOptions">
+            <fa-view ng-repeat="view in sequence">
+                <fa-modifier fa-size="[5, 10]">
+                    <fa-surface
+                            fa-background-color="view.bgColor"
+                            fa-click="changeColor(view, $event)">
+
+                    </fa-surface>
+                </fa-modifier>
+            </fa-view>
+        </fa-sequential-layout>
+        <fa-grid-layout fa-options="myGridLayoutOptions">
+            <fa-modifier ng-repeat="grid in grids"
+                         fa-size="[150, 150]">
+                <fa-surface>
+                    <div class="kruzok">
+                        <div class="trojuholnik">
+                            <div class="mail"></div>
+                        </div>
+                    </div>
+                </fa-surface>
+            </fa-modifier>
+        </fa-grid-layout>
+    </fa-sequential-layout>
+</fa-app>
+
+{% endverbatim %}
